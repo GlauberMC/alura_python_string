@@ -20,10 +20,12 @@ class ExtratorArgumentosUrl:
         # substring = url[index:]
         # print(substring)
 
+        buscaMoedaOrigem  = "moedaorigem"
+        buscaMoedaDestino = "moedadestino"
 
-        indiceInicialMoedaDestino   = self.url.find('=', 15) + 1
+        indiceInicialMoedaDestino   = self.url.find(buscaMoedaDestino) + len(buscaMoedaDestino) + 1
 
-        indiceInicialMoedaOrigem    = self.url.find('=') + 1
+        indiceInicialMoedaOrigem    = self.url.find(buscaMoedaOrigem) + len(buscaMoedaOrigem) + 1
         indiceFinalMoedaOrigem      = self.url.find("&")
 
         moedaOrigem = self.url[indiceInicialMoedaOrigem:indiceFinalMoedaOrigem]
