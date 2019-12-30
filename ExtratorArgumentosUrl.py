@@ -34,5 +34,5 @@ class ExtratorArgumentosUrl:
 
         return moedaOrigem, moedaDestino
 
-    def econtraIndiceInicial(self, moedaBuscada):
+    def encontraIndiceInicial(self, moedaBuscada):
         return self.url.find(moedaBuscada) + len(moedaBuscada) +1
