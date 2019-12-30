@@ -1,5 +1,6 @@
 from ExtratorArgumentosUrl import ExtratorArgumentosUrl
 
+
 url = "https://www.bytebank.com.br/cambio?moedaorigem=real&moedadestino=dolar"
 # url = "moedaorigem=real&moedadestino=dolar"
 
@@ -9,3 +10,10 @@ moedaOrigem, moedaDestino = argumentoUrl.extraiArgumentos()
 
 print(moedaOrigem, moedaDestino)
 
+'''
+
+string = 'bytebytebank'
+stringNova = string.replace('byte', 'gmc', 1)
+print(stringNova)
+
+'''
